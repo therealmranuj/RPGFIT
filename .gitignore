@@ -1,0 +1,102 @@
+# ==========================================
+# 1. SECRETS, KEYS & ENVIRONMENT (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+secrets/
+
+# ==========================================
+# 2. PYTHON & FASTAPI BACKEND
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite3
+
+# ==========================================
+# 3. FLUTTER, DART & ANDROID / IOS MOBILE
+# ==========================================
+# Dart & Flutter build artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/build/
+**/generated_plugin_registrant.dart
+
+# Android / Gradle
+**/android/.gradle/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS / Xcode (for future iOS builds)
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ==========================================
+# 4. AI / ML MODELS & LOCAL DATASETS
+# ==========================================
+# Keep large MediaPipe/TFLite binaries out of Git (fetch via script/LFS)
+*.tflite
+*.task
+*.onnx
+*.pt
+*.pth
+*.h5
+*.mp4
+*.mov
+*.avi
+
+# ==========================================
+# 5. IDEs, OS & DOCKER VOLUMES
+# ==========================================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+pgdata/
+redis_data/
